@@ -1,0 +1,308 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* NAVBAR */
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+
+/* HERO */
+.hero{
+    background:url('/techfusion/images/bg-home.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+/* FORM */
+form{
+    background:white;
+    width:350px;
+    margin:40px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+/* NEWS PAGE */
+.news-hero{
+    background:url('/techfusion/images/bg-news.jpg');
+    background-size:cover;
+    background-position:center;
+    padding:100px 20px;
+    color:white;
+    text-align:center;
+}
+
+.news-container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.news-card{
+    background:white;
+    margin-bottom:30px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.news-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.news-content{
+    padding:25px;
+}
+
+.news-content h2{
+    color:#007BFF;
+}
+
+.news-content p{
+    line-height:1.8;
+    color:#444;
+}
+
+/* LOGIN + REGISTER */
+.auth-bg{
+    background:url('/techfusion/images/bg-auth.jpg');
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    padding-top:40px;
+}
+
+/* ADMIN */
+.admin-title{
+    text-align:center;
+    margin-top:20px;
+}
+
+.admin-actions{
+    text-align:center;
+    margin:20px;
+}
+/* ADMIN DASHBOARD */
+
+.dashboard{
+    width:90%;
+    margin:auto;
+    padding:30px;
+}
+
+.dashboard h1{
+    text-align:center;
+    color:#007BFF;
+}
+
+.admin-btn{
+    background:#007BFF;
+    color:white;
+    padding:10px 15px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.admin-btn:hover{
+    background:#0056b3;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+}
+
+table th{
+    background:#111;
+    color:white;
+}
+
+.action-btn{
+    padding:8px 12px;
+    border-radius:5px;
+    text-decoration:none;
+    color:white;
+}
+
+.edit-btn{
+    background:green;
+}
+
+.delete-btn{
+    background:red;
+}
+
+/* UPLOAD PAGE */
+
+.upload-bg{
+    background:url('/techfusion/images/bg-upload.jpg');
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    padding-top:40px;
+}
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* SEARCH BAR */
+
+.search-box{
+    text-align:center;
+    margin:20px;
+}
+
+.search-box input{
+    width:60%;
+    padding:12px;
+    border-radius:30px;
+    border:1px solid #ccc;
+}
+
+/* TRENDING */
+
+.trending-hero{
+    background:url('/techfusion/images/bg-trending.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+/* CONTACT */
+
+.contact-bg{
+    background:url('/techfusion/images/bg-contact.jpg');
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    padding-top:40px;
+}
+
+/* GLASS EFFECT */
+
+.glass{
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    border-radius:10px;
+}
+
+/* ANIMATIONS */
+
+.card{
+    animation:fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
